@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29006.145
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B2721322-EB24-40F5-B2DA-48AB6F9337B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.Testing.Diagnostics", "src\Microsoft.AspNetCore.Testing.Diagnostics\Microsoft.AspNetCore.Testing.Diagnostics.csproj", "{C87237C5-1DE5-485E-90D5-4F05C77A80B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Testing.Diagnostics", "src\Microsoft.AspNetCore.Testing.Diagnostics\Microsoft.AspNetCore.Testing.Diagnostics.csproj", "{C87237C5-1DE5-485E-90D5-4F05C77A80B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{59FAD17C-A11B-48F4-8F84-45E650BECAC3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTests", "samples\SampleTests\SampleTests.csproj", "{C0AE3C14-24CE-4443-9CC9-329751280666}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vendor", "vendor", "{2711299A-059D-4033-ABAD-74A2D5AF021B}"
 EndProject
@@ -19,9 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "diagnostics", "diagnostics"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{32C9F13A-A98F-4259-9A22-2B984FF50336}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Diagnostics.Tools.RuntimeClient", "vendor\dotnet\diagnostics\src\Microsoft.Diagnostics.Tools.RuntimeClient\Microsoft.Diagnostics.Tools.RuntimeClient.csproj", "{91A43459-573F-4786-8DDE-B4FC2A948749}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Diagnostics.Tools.RuntimeClient", "vendor\dotnet\diagnostics\src\Microsoft.Diagnostics.Tools.RuntimeClient\Microsoft.Diagnostics.Tools.RuntimeClient.csproj", "{91A43459-573F-4786-8DDE-B4FC2A948749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.Testing.DataCollector", "src\Microsoft.AspNetCore.Testing.DataCollector\Microsoft.AspNetCore.Testing.DataCollector.csproj", "{73CB83B4-34A9-4D7D-9093-A0F147740150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Testing.DataCollector", "src\Microsoft.AspNetCore.Testing.DataCollector\Microsoft.AspNetCore.Testing.DataCollector.csproj", "{73CB83B4-34A9-4D7D-9093-A0F147740150}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TracesSample", "samples\TracesSample\TracesSample.csproj", "{463FC701-43A3-4167-9065-A695F846EB6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,9 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C87237C5-1DE5-485E-90D5-4F05C77A80B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,18 +45,6 @@ Global
 		{C87237C5-1DE5-485E-90D5-4F05C77A80B1}.Release|x64.Build.0 = Release|Any CPU
 		{C87237C5-1DE5-485E-90D5-4F05C77A80B1}.Release|x86.ActiveCfg = Release|Any CPU
 		{C87237C5-1DE5-485E-90D5-4F05C77A80B1}.Release|x86.Build.0 = Release|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Debug|x64.Build.0 = Debug|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Debug|x86.Build.0 = Debug|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Release|x64.ActiveCfg = Release|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Release|x64.Build.0 = Release|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Release|x86.ActiveCfg = Release|Any CPU
-		{C0AE3C14-24CE-4443-9CC9-329751280666}.Release|x86.Build.0 = Release|Any CPU
 		{91A43459-573F-4786-8DDE-B4FC2A948749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91A43459-573F-4786-8DDE-B4FC2A948749}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91A43459-573F-4786-8DDE-B4FC2A948749}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -84,14 +69,32 @@ Global
 		{73CB83B4-34A9-4D7D-9093-A0F147740150}.Release|x64.Build.0 = Release|Any CPU
 		{73CB83B4-34A9-4D7D-9093-A0F147740150}.Release|x86.ActiveCfg = Release|Any CPU
 		{73CB83B4-34A9-4D7D-9093-A0F147740150}.Release|x86.Build.0 = Release|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Debug|x64.Build.0 = Debug|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Debug|x86.Build.0 = Debug|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Release|x64.ActiveCfg = Release|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Release|x64.Build.0 = Release|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Release|x86.ActiveCfg = Release|Any CPU
+		{463FC701-43A3-4167-9065-A695F846EB6E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C87237C5-1DE5-485E-90D5-4F05C77A80B1} = {B2721322-EB24-40F5-B2DA-48AB6F9337B0}
-		{C0AE3C14-24CE-4443-9CC9-329751280666} = {59FAD17C-A11B-48F4-8F84-45E650BECAC3}
 		{B5F981E3-4D97-4B6E-9CEE-DAD2E6A23D7B} = {2711299A-059D-4033-ABAD-74A2D5AF021B}
 		{13A42799-9917-4007-8A62-82CB1EEC53C1} = {B5F981E3-4D97-4B6E-9CEE-DAD2E6A23D7B}
 		{32C9F13A-A98F-4259-9A22-2B984FF50336} = {13A42799-9917-4007-8A62-82CB1EEC53C1}
 		{91A43459-573F-4786-8DDE-B4FC2A948749} = {32C9F13A-A98F-4259-9A22-2B984FF50336}
 		{73CB83B4-34A9-4D7D-9093-A0F147740150} = {B2721322-EB24-40F5-B2DA-48AB6F9337B0}
+		{463FC701-43A3-4167-9065-A695F846EB6E} = {59FAD17C-A11B-48F4-8F84-45E650BECAC3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37781072-2B82-45E1-9179-E5182076966D}
 	EndGlobalSection
 EndGlobal
