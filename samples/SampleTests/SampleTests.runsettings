@@ -1,0 +1,20 @@
+<RunSettings>
+  <!-- Configurations that affect the Test Framework -->
+  <RunConfiguration>
+    <!-- Paths relative to directory that contains .runsettings file-->
+    <ResultsDirectory>.\bin\TestResults</ResultsDirectory>
+    <TestAdaptersPaths>.\bin\Debug\netcoreapp3.0</TestAdaptersPaths>
+  </RunConfiguration>
+    <DataCollectionRunSettings>
+        <DataCollectors>
+            <DataCollector friendlyName="EventPipe">
+                <Configuration>
+                    <Providers>
+                        <Profile name="Default" />
+                        <Provider name="Custom-EventSource" />
+                    </Providers>
+                </Configuration>
+            </DataCollector>
+        </DataCollectors>
+    </DataCollectionRunSettings>
+</RunSettings>

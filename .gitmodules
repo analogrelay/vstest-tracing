@@ -1,0 +1,3 @@
+[submodule "vendor/dotnet/diagnostics"]
+	path = vendor/dotnet/diagnostics
+	url = https://github.com/dotnet/diagnostics/
